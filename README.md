@@ -6,7 +6,7 @@ With the default settings, this will scan for background Adobe services every ho
 
 1. open a Terminal and execute the following commands:
 
-    ```shell
+    ```
     git clone https://github.com/luckman212/adobe_kill.git
 
     cd adobe_kill
@@ -26,7 +26,7 @@ With the default settings, this will scan for background Adobe services every ho
 
 1. from Terminal:
 
-    ```shell
+    ```
     sudo launchctl bootout system /Library/LaunchDaemons/com.adobe_kill.daemon.plist
 
     sudo rm /Library/LaunchDaemons/com.adobe_kill.daemon.plist
