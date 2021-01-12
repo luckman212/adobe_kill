@@ -13,7 +13,7 @@ With the default settings, this will scan for background Adobe services every ho
 
     cp adobe_kill.sh /usr/local/bin
 
-    sudo chown root /Library/LaunchDaemons/com.adobe_kill.daemon.plist
+    sudo chown root com.adobe_kill.daemon.plist
 
     sudo cp com.adobe_kill.daemon.plist /Library/LaunchDaemons
 
