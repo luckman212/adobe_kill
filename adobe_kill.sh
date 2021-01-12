@@ -47,24 +47,24 @@ done
 
 for proc in "${procArr[@]}"; do
   echo "killing $proc"
-  sudo killall -QUIT "$proc" 2>/dev/null
+  killall -QUIT "$proc" 2>/dev/null
 done
 
 for d in "${launchdArr[@]}"; do
   echo "stopping $d"
   launchctl stop "$d"
-  sudo launchctl stop "$d"
+  launchctl stop "$d"
 done
 
 #AdobeCRDaemon
-sudo pkill -x AdobeCRDaemon
+pkill -x AdobeCRDaemon
 
 #CCLibrary
 echo "killing CCLibrary"
-sudo pkill -f '^/Library/Application Support/Adobe/Creative Cloud Libraries/CCLibrary.app/'
+pkill -f '^/Library/Application Support/Adobe/Creative Cloud Libraries/CCLibrary.app/'
 
 #CCXProcess
 echo "killing CCXProcess"
-sudo pkill -f '^/Applications/Utilities/Adobe Creative Cloud Experience/CCXProcess/CCXProcess.app/'
+pkill -f '^/Applications/Utilities/Adobe Creative Cloud Experience/CCXProcess/CCXProcess.app/'
 
 exit 0
