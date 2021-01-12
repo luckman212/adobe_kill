@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.adobe_kill.daemon</string>
+	<key>Program</key>
+	<string>/usr/local/bin/adobe_kill.sh</string>
+	<key>StandardErrorPath</key>
+	<string>/tmp/adobe_kill.daemon.stderr</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/adobe_kill.daemon.stdout</string>
+	<key>StartInterval</key>
+	<integer>3600</integer>
+	<key>WorkingDirectory</key>
+	<string>/tmp</string>
+</dict>
+</plist>
